@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - FANZA アフィリエイト</title>
+    <meta name="description" content="FANZA アフィリエイトサイトへのお問い合わせページです。ご質問やご意見をお聞かせください。">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/">
+                    <img src="assets/img/logo.png" alt="FANZA アフィリエイト">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="index.html#featured">おすすめ</a></li>
+                    <li><a href="index.html#categories">カテゴリ</a></li>
+                    <li><a href="index.html#ranking">ランキング</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-content">
+            <div class="container">
+                <h1>お問い合わせ</h1>
+                
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2>お問い合わせについて</h2>
+                        <p>当サイトに関するご質問、ご意見、ご要望がございましたら、以下のフォームよりお気軽にお問い合わせください。</p>
+                        
+                        <div class="contact-notes">
+                            <h3>ご注意事項</h3>
+                            <ul>
+                                <li><strong>商品に関するお問い合わせ</strong>：商品の詳細、購入方法、配送、返品・交換等については、<a href="https://www.dmm.com/" target="_blank" rel="noopener noreferrer">DMM.com（FANZA）</a>へ直接お問い合わせください。</li>
+                                <li><strong>回答までの期間</strong>：お問い合わせ内容により、回答までに数日お時間をいただく場合があります。</li>
+                                <li><strong>営業・宣伝目的のお問い合わせ</strong>：営業や宣伝目的のお問い合わせはご遠慮ください。</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-section">
+                        <h2>お問い合わせフォーム</h2>
+                        <form class="contact-form" action="#" method="post">
+                            <div class="form-group">
+                                <label for="name">お名前 <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">メールアドレス <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">件名 <span class="required">*</span></label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">選択してください</option>
+                                    <option value="site-inquiry">サイトに関するお問い合わせ</option>
+                                    <option value="content-request">コンテンツのリクエスト</option>
+                                    <option value="technical-issue">技術的な問題</option>
+                                    <option value="privacy-inquiry">プライバシーに関するお問い合わせ</option>
+                                    <option value="other">その他</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">お問い合わせ内容 <span class="required">*</span></label>
+                                <textarea id="message" name="message" rows="6" required placeholder="お問い合わせ内容を詳しくご記入ください"></textarea>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="privacy-agree" name="privacy-agree" required>
+                                    <span class="checkmark"></span>
+                                    <a href="privacy.html" target="_blank">プライバシーポリシー</a>に同意します <span class="required">*</span>
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn-primary btn-large">送信する</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="alternative-contact">
+                        <h2>その他のお問い合わせ方法</h2>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <h3>商品に関するお問い合わせ</h3>
+                                <p>商品の詳細、購入、配送等については、DMM.com（FANZA）カスタマーサポートへお問い合わせください。</p>
+                                <a href="https://help.dmm.com/" target="_blank" rel="noopener noreferrer" class="btn-outline">DMM.comヘルプセンター</a>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <h3>アフィリエイトプログラムについて</h3>
+                                <p>DMMアフィリエイトプログラムに関するお問い合わせは、DMM.comアフィリエイトサポートへお問い合わせください。</p>
+                                <a href="https://affiliate.dmm.com/" target="_blank" rel="noopener noreferrer" class="btn-outline">DMMアフィリエイト</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>サイト情報</h4>
+                    <ul>
+                        <li><a href="privacy.html">プライバシーポリシー</a></li>
+                        <li><a href="disclaimer.html">免責事項</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>カテゴリ</h4>
+                    <ul>
+                        <li><a href="#">動画</a></li>
+                        <li><a href="#">電子書籍</a></li>
+                        <li><a href="#">ゲーム</a></li>
+                        <li><a href="#">音楽・音声</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>注意事項</h4>
+                    <p>本サイトはアフィリエイトサイトです。商品の購入はFANZA公式サイトで行われます。価格や商品情報は変更される場合があります。</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FANZA アフィリエイト. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+    <style>
+        .page-content {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .contact-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .contact-info h2 {
+            color: #e50914;
+            margin-bottom: 20px;
+        }
+
+        .contact-notes {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .contact-notes h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .contact-notes ul {
+            padding-left: 20px;
+        }
+
+        .contact-notes li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .contact-form-section {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .contact-form-section h2 {
+            color: #e50914;
+            margin-bottom: 30px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .required {
+            color: #e50914;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #e50914;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            cursor: pointer;
+            line-height: 1.5;
+        }
+
+        .checkbox-label input[type="checkbox"] {
+            width: auto;
+            margin: 0;
+        }
+
+        .alternative-contact {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .alternative-contact h2 {
+            color: #e50914;
+            margin-bottom: 30px;
+        }
+
+        .contact-methods {
+            display: grid;
+            gap: 30px;
+        }
+
+        .contact-method {
+            padding: 25px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .contact-method h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .contact-method p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .contact-info,
+            .contact-form-section,
+            .alternative-contact {
+                padding: 25px;
+            }
+
+            .contact-wrapper {
+                padding: 0 15px;
+            }
+        }
+    </style>
+</body>
+</html>
+
