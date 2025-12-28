@@ -93,14 +93,14 @@ function displayWorks() {
 }
 
 function createWorkCard(work) {
-  const img = work.image_main ? `/assets/images/${work.image_main}` : '/assets/images/placeholder.jpg';
+  const img = work.image_main ? `/assets/img/${work.image_main}` : '/assets/img/placeholder.jpg';
   const id = encodeURIComponent(work.id);
   const ratingStars = '★'.repeat(Math.floor(work.rating || 0));
 
   return `
     <article class="product-card">
       <div class="product-image">
-        <a href="product_detail.html?id=${work.id}"><img src="${img}" alt="${[work.title, work.actress].filter(Boolean).join(' | ') || '作品'}" loading="lazy" width="1200" height="675" onerror="this.onerror=null;this.src='/assets/images/placeholder.jpg'"></a>
+        <a href="product_detail.html?id=${work.id}"><img src="${img}" alt="${[work.title, work.actress].filter(Boolean).join(' | ') || '作品'}" loading="lazy" width="1200" height="675" onerror="this.onerror=null;this.src='/assets/img/placeholder.jpg'"></a>
       </div>
       <div class="product-info">
         <h3 class="product-title">${work.title || ''}</h3>
