@@ -3,204 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FANZA アフィリエイト - デジタルコンテンツの総合案内サイト</title>
-    <meta name="description" content="FANZAの豊富なデジタルコンテンツから厳選したおすすめ商品をご紹介。動画、電子書籍、ゲームなど幅広いジャンルを取り扱っています。">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>バニーガール作品データベース | 検索</title>
+    <meta name="description" content="バニー・逆バニー衣装の作品を検索・比較できるカタログサイトです。">
+    <link rel="stylesheet" href="/assets/css/theme.css">
+    <link rel="stylesheet" href="/assets/css/layout.css">
+    <link rel="canonical" href="https://bunny-girl.jp/">
+    
+
+  <!-- OGP / Twitter -->
+  <meta property="og:site_name" content="bunny-girl.jp">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="バニーガール作品データベース">
+  <meta property="og:description" content="バニー・逆バニー衣装の作品を検索・比較できるカタログサイト。">
+  <meta property="og:url" content="https://bunny-girl.jp/">
+  <meta property="og:image" content="https://bunny-girl.jp/assets/images/ogp_default.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@bunny_girl_jp">
+  <meta name="twitter:image" content="https://bunny-girl.jp/assets/images/ogp_default.jpg">
+
+  <!-- JSON-LD: WebSite + SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "bunny-girl.jp",
+    "url": "https://bunny-girl.jp/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://bunny-girl.jp/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <!-- JSON-LD: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "bunny-girl.jp",
+    "url": "https://bunny-girl.jp/",
+    "logo": "https://bunny-girl.jp/assets/images/ogp_default.jpg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "availableLanguage": ["Japanese"],
+      "url": "https://bunny-girl.jp/contact"
+    }
+  }
+  </script>
+
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="/">
-                    <img src="assets/img/logo.png" alt="FANZA アフィリエイト">
-                </a>
+  <!-- 年齢確認モーダル -->
+  <div id="age-verification-modal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-labelledby="age-title">
+      <h2 id="age-title">年齢確認</h2>
+      <p>このサイトには18歳以上向けの表現が含まれます。</p>
+      <p>あなたは18歳以上ですか？</p>
+      <div class="modal-buttons">
+        <button id="confirm-age-btn" class="btn btn-primary">18歳以上です</button>
+        <button id="deny-age-btn" class="btn btn-secondary">18歳未満です</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-brand"><a href="/"><span class="site-title">bunny-girl.jp</span></a></div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="search-section">
+      <div class="container">
+
+        <div class="search-controls">
+          <div class="search-bar">
+            <input type="text" id="search-input" placeholder="作品名・女優名で検索" class="search-input" aria-label="検索入力">
+            <button id="search-btn" class="btn btn-primary">検索</button>
+          </div>
+          <div class="filter-controls">
+            <div class="sort-control">
+              <label for="sort-select">並び順:</label>
+              <select id="sort-select" class="sort-select">
+                <option value="new">新着順</option>
+                <option value="popular">人気順</option>
+                <option value="title">タイトル順</option>
+              </select>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#featured">おすすめ</a></li>
-                    <li><a href="#categories">カテゴリ</a></li>
-                    <li><a href="#ranking">ランキング</a></li>
-                    <li><a href="campaign.html">キャンペーン</a></li>
-                    <li><a href="contact.html">お問い合わせ</a></li>
-                </ul>
-            </nav>
+          </div>
         </div>
-    </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-background">
-                <img src="assets/img/hero-banner.jpg" alt="デジタルコンテンツ">
-            </div>
-            <div class="hero-content">
-                <div class="container">
-                    <h1>あなたのお気に入りを見つけよう</h1>
-                    <p>FANZAの豊富なデジタルコンテンツから厳選したおすすめをご紹介</p>
-                    <p class="ad-label">[広告]</p>
-                    <a href="#featured" class="btn-primary">今すぐチェック</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Featured Products Section -->
-        <section id="featured" class="featured-products">
-            <div class="container">
-                <h2>おすすめ商品</h2>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <img src="assets/img/product-sample-1.jpg" alt="デジタル動画コンテンツ">
-                        <div class="product-info">
-                            <h3>プレミアム動画コンテンツ</h3>
-                            <p>高品質なデジタル動画コンテンツをお楽しみください。豊富なジャンルから選べます。</p>
-                            <p class="price">¥1,980〜</p>
-                            <p class="ad-label">[広告]</p>
-                            <a href="#" class="btn-secondary" target="_blank" rel="noopener noreferrer">FANZAで詳細を見る</a>
-                        </div>
-                    </div>
-                    
-                    <div class="product-card">
-                        <img src="assets/img/product-sample-2.jpg" alt="デジタル書籍・マンガ">
-                        <div class="product-info">
-                            <h3>デジタル書籍・マンガ</h3>
-                            <p>話題の最新作から名作まで、豊富な電子書籍コレクションをご用意しています。</p>
-                            <p class="price">¥500〜</p>
-                            <p class="ad-label">[広告]</p>
-                            <a href="#" class="btn-secondary" target="_blank" rel="noopener noreferrer">FANZAで詳細を見る</a>
-                        </div>
-                    </div>
-                    
-                    <div class="product-card">
-                        <img src="assets/img/product-sample-3.jpg" alt="ゲームコンテンツ">
-                        <div class="product-info">
-                            <h3>ゲームコンテンツ</h3>
-                            <p>エキサイティングなゲーム体験をお届け。様々なジャンルのゲームが楽しめます。</p>
-                            <p class="price">¥2,500〜</p>
-                            <p class="ad-label">[広告]</p>
-                            <a href="#" class="btn-secondary" target="_blank" rel="noopener noreferrer">FANZAで詳細を見る</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Categories Section -->
-        <section id="categories" class="categories">
-            <div class="container">
-                <h2>カテゴリから探す</h2>
-                <div class="category-grid">
-                    <div class="category-card">
-                        <div class="category-icon">🎬</div>
-                        <h3>動画</h3>
-                        <p>高品質な動画コンテンツ</p>
-                        <a href="#" class="btn-outline">詳細を見る</a>
-                    </div>
-                    
-                    <div class="category-card">
-                        <div class="category-icon">📚</div>
-                        <h3>電子書籍</h3>
-                        <p>豊富な書籍・マンガ</p>
-                        <a href="#" class="btn-outline">詳細を見る</a>
-                    </div>
-                    
-                    <div class="category-card">
-                        <div class="category-icon">🎮</div>
-                        <h3>ゲーム</h3>
-                        <p>エキサイティングなゲーム</p>
-                        <a href="#" class="btn-outline">詳細を見る</a>
-                    </div>
-                    
-                    <div class="category-card">
-                        <div class="category-icon">🎵</div>
-                        <h3>音楽・音声</h3>
-                        <p>音楽・音声コンテンツ</p>
-                        <a href="#" class="btn-outline">詳細を見る</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Ranking Section -->
-        <section id="ranking" class="ranking">
-            <div class="container">
-                <h2>人気ランキング</h2>
-                <div class="ranking-list">
-                    <div class="ranking-item">
-                        <div class="rank-number">1</div>
-                        <div class="ranking-content">
-                            <h3>話題の新作動画</h3>
-                            <p>今最も注目されている動画コンテンツです。</p>
-                            <p class="ad-label">[広告]</p>
-                            <a href="#" class="btn-small" target="_blank" rel="noopener noreferrer">FANZAで見る</a>
-                        </div>
-                    </div>
-                    
-                    <div class="ranking-item">
-                        <div class="rank-number">2</div>
-                        <div class="ranking-content">
-                            <h3>人気マンガシリーズ</h3>
-                            <p>読者から高い評価を得ているマンガシリーズです。</p>
-                            <p class="ad-label">[広告]</p>
-                            <a href="#" class="btn-small" target="_blank" rel="noopener noreferrer">FANZAで見る</a>
-                        </div>
-                    </div>
-                    
-                    <div class="ranking-item">
-                        <div class="rank-number">3</div>
-                        <div class="ranking-content">
-                            <h3>注目のゲームタイトル</h3>
-                            <p>プレイヤーから絶賛されているゲームです。</p>
-                            <p class="ad-label">[広告]</p>
-                            <a href="#" class="btn-small" target="_blank" rel="noopener noreferrer">FANZAで見る</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="cta">
-            <div class="container">
-                <h2>今すぐFANZAでお気に入りを見つけよう</h2>
-                <p>豊富なデジタルコンテンツがあなたを待っています</p>
-                <p class="ad-label">[広告]</p>
-                <a href="#" class="btn-primary btn-large" target="_blank" rel="noopener noreferrer">FANZAサイトへ</a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>サイト情報</h4>
-                    <ul>
-                        <li><a href="privacy.html">プライバシーポリシー</a></li>
-                        <li><a href="disclaimer.html">免責事項</a></li>
-                        <li><a href="contact.html">お問い合わせ</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>カテゴリ</h4>
-                    <ul>
-                        <li><a href="#">動画</a></li>
-                        <li><a href="#">電子書籍</a></li>
-                        <li><a href="#">ゲーム</a></li>
-                        <li><a href="#">音楽・音声</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>注意事項</h4>
-                    <p>本サイトはアフィリエイトサイトです。商品の購入はFANZA公式サイトで行われます。価格や商品情報は変更される場合があります。</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 FANZA アフィリエイト. All rights reserved.</p>
-            </div>
+        <div class="category-filters">
+          <h3>カテゴリー</h3>
+          <div class="filter-grid" role="group" aria-label="カテゴリー">
+            <label class="filter-item"><input type="checkbox" value="reverse-bunny" class="category-filter">逆バニー</label>
+            <label class="filter-item"><input type="checkbox" value="classic-bunny" class="category-filter">正統派バニー</label>
+            <label class="filter-item"><input type="checkbox" value="vr-bunny" class="category-filter">VR</label>
+            <label class="filter-item"><input type="checkbox" value="maid-bunny" class="category-filter">メイドバニー</label>
+          </div>
         </div>
-    </footer>
 
-    <script src="assets/js/script.js"></script>
+        <div id="results-count" class="results-count" aria-live="polite"></div>
+
+        <div id="works-grid" class="product-grid" aria-live="polite"></div>
+
+        <div class="pagination">
+          <button id="prev-page" class="btn btn-outline btn-small" aria-label="前のページ">前へ</button>
+          <button id="next-page" class="btn btn-outline btn-small" aria-label="次のページ">次へ</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer class="footer">
+  <div class="footer-bottom">© 2025 bunny-girl.jp ・ <a href="/privacy">プライバシーポリシー</a></div>
+  </footer>
+
+
+  <script type="module" src="/assets/js/search.js"></script>
 </body>
 </html>
-
