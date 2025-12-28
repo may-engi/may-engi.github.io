@@ -93,7 +93,7 @@ function displayWorks() {
 }
 
 function createWorkCard(work) {
-  const img = work.image_main ? `/assets/img/${work.image_main}` : '/assets/img/placeholder.jpg';
+  const img = '/assets/img/placeholder.jpg'; // 実際の画像ファイルがリポジトリにないため、プレースホルダーを表示します
   const id = encodeURIComponent(work.id);
   const ratingStars = '★'.repeat(Math.floor(work.rating || 0));
 
