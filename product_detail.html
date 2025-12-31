@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>作品詳細 | バニーガール作品データベース</title>
     <meta name="description" content="個別作品の詳細ページです。">
-    <link rel="stylesheet" href="/assets/css/theme.css">
-    <link rel="stylesheet" href="/assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="canonical" href="https://bunny-girl.jp/product_detail">
     
 
@@ -29,14 +29,14 @@
 <body>
   <header class="header">
     <nav class="nav">
-      <div class="nav-brand"><a href="/"><span class="site-title">bunny-girl.jp</span></a></div>
+      <div class="nav-brand"><a href="./index.html"><img src="assets/img/logo.png" alt="bunny-girl.jp" height="40"></a></div>
     </nav>
   </header>
 
   <main class="main">
     <div class="container">
       <nav class="breadcrumb">
-        <a href="/index">作品検索</a> &gt; <span id="current-title">作品詳細</span>
+        <a href="./index.html">作品検索</a> &gt; <span id="current-title">作品詳細</span>
       </nav>
 
       <div class="product-detail">
@@ -51,8 +51,6 @@
             <div class="product-meta">
               <table class="info-table">
                 <tr><th>女優名</th><td id="actress-name">-</td></tr>
-                <tr><th>カテゴリー</th><td id="category">-</td></tr>
-                <tr><th>作品時間</th><td id="duration">-</td></tr>
                 <tr><th>発売日</th><td id="release-date">-</td></tr>
               </table>
             </div>
@@ -81,10 +79,19 @@
 
   
   <footer class="footer">
-  <div class="footer-bottom">© 2025 bunny-girl.jp ・ <a href="/privacy">プライバシーポリシー</a></div>
+    <div class="footer-content">
+      <ul class="footer-menu">
+        <li><a href="./index.html">トップ</a></li>
+        <li><a href="./articles/index.html">記事一覧</a></li>
+        <li><a href="./contact.html">お問い合わせ</a></li>
+        <li><a href="./privacy.html">プライバシーポリシー</a></li>
+        <li><a href="./disclaimer.html">免責事項</a></li>
+      </ul>
+      <div class="footer-bottom">© 2025 bunny-girl.jp</div>
+    </div>
   </footer>
 
 
-  <script type="module" src="/assets/js/productDetail.js"></script>
+  <script type="module" src="assets/js/productDetail.js"></script>
 </body>
 </html>

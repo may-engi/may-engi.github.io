@@ -21,3 +21,10 @@
 .product-description,.product-review,.recommendation{margin-top:24px;background:#fff;padding:18px;border-radius:10px}
 
 .pagination .btn{min-height:46px;padding:12px 18px;font-size:16px;border-radius:12px}
+
+.footer{background:#f8f9fa;padding:40px 0;border-top:1px solid #eee}
+.footer-content{max-width:1200px;margin:0 auto;padding:0 20px;text-align:center}
+.footer-menu{list-style:none;padding:0;margin:0 0 20px;display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+.footer-menu li a{color:#666;text-decoration:none;font-size:14px}
+.footer-menu li a:hover{color:#ff6b9d}
+.footer-bottom{font-size:14px;color:#999}

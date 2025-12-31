@@ -29,17 +29,15 @@ function render(work) {
   setText('current-title', work.title);
   setText('product-title', work.title);
   setText('actress-name', work.actress);
-  setText('category', CAT_MAP[work.category] || work.category || '-');
-  
-  setText('duration', work.duration);
+
   setText('release-date', work.release_date);
 
   const img = document.getElementById('main-image');
   if (img) {
-    img.src = `/assets/images/${work.image_main || 'placeholder.jpg'}`;
+    img.src = `assets/img/${work.image_main || 'placeholder.jpg'}`;
     img.setAttribute('width','1200');
     img.setAttribute('height','675');
-    img.onerror = () => { img.onerror = null; img.src = '/assets/images/placeholder.jpg'; };
+    img.onerror = () => { img.onerror = null; img.src = 'assets/img/placeholder.jpg'; };
     img.alt = work.title || '作品画像';
   }
 
